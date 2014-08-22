@@ -1,24 +1,30 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-struct{
+struct Profil{
   char *name;
   int num;
-}profil;
+} p;
 
-int main(){
 
-  char name[15];
-  int num;
+void myPrint(char *name,int num){
   
+  p.name=name;
+  p.num=num;
+  printf("NAME:%s AGE:%x\n",p.name,p.num);
+}
+
+int main(void){
+
+  struct Profil p;
+  char name[20];
+  int num;
+
   printf("you are profil(ex: name[15 Within] Age[0~120])>");
   scanf("%s %x", name,&num);
   
+  myPrint(name,num);
 
-  profil.name=name;
-  profil.num=num;
-  
-  printf("NAME:%s AGE:%x\n",profil.name,profil.num);
   return(0);
   
-
 }
