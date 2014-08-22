@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define WRONG 1;
-#define GOOD 0;
+#define WRONG 1
+#define GOOD 0
 
 struct Profil{
   char *name;
@@ -15,17 +15,6 @@ void myPrint(char *name,int num){
   p.num=num;
   printf("NAME:%s AGE:%x\n",p.name,p.num);
 }
-/*
-
-int myAge(int num){
-  
-  if(){
-
-
-  }
-}
-*/
-
 
 int main(void){
 
@@ -33,7 +22,7 @@ int main(void){
   char name[20];
   int num;
 
-  printf("you are profil!/n");
+  printf("you are profil!\n");
   printf("name[20 Within]>");
   scanf("%s",name);
   printf("Age[120 Within])>"); 
