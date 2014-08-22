@@ -16,6 +16,18 @@ void myPrint(char *name,int num){
   printf("NAME:%s AGE:%x\n",p.name,p.num);
 }
 
+
+int myAge(int num){
+  if(num<=0||num>=120){
+    return (num);
+  }else if(num<0||num>120){
+    printf("NO!,return Age enter.");
+    main();
+    }
+}
+
+
+
 int main(void){
 
   struct Profil p;
