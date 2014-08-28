@@ -14,12 +14,14 @@ int main(void){
   char name[20];
   int age = 0;
 
-  printf("yoour profile\n");
-  printf("Name>");
-  scanf("%s",name);
-  printf("age>");
-  scanf("%x",&age);
+  printf("Name-of-a-person registration!\n");
   
+  printf("The input of a name(Unril 20)>");
+  scanf("%s",name);
+  printf("The input of age>");
+  scanf("%x",&age);
+ 
+ 
   p =(struct list *)malloc(sizeof(struct  list));
   
   
